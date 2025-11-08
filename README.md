@@ -1,13 +1,13 @@
 # README for Username Validation Script
 
 ## Author Information
-- **Name:** [Your Full Name]
-- **Course:** [Course Number and Name]
+- **Name:** Tyler Momani
+- **Course:** cpsc 298-01
 - **Assignment:** Maxscore Assignment
-- **Date:** [Date of Completion]
+- **Date:** 11/8/2025
 
 ## Program Description
-[Write 2-3 sentences in your own words describing what this script does and its purpose. Explain the problem it solves and how it works at a high level.]
+This Bash script prompts the user for five positive integer scores, determines the highest score, and prints how far each score differs from that maximum. It supports interactive input and non-interactive testing via `maxscore-input`. The script trims common whitespace and validates inputs to avoid errors when run in CI or with redirected input.
 
 ## Usage
 To run the script interactively:
@@ -21,21 +21,26 @@ To test with the provided input file:
 ```
 
 ## How the Script Works
-[Explain in 3-5 sentences how your script works. Include information about:]
-- How you read and store numbers in an array
-- How you loop through the array to find the maximum value
-- How you calculate and display the difference between each score and the highest
+1. The script prompts the user to enter five positive integer scores.
+2. It reads the scores into an array, ensuring to trim any leading or trailing whitespace.
+3. It validates that each input is a positive integer.
+4. It calculates the maximum score from the array.
+5. It computes the difference between each score and the maximum score.
+6. Finally, it prints the maximum score and the differences for each score.
+
+
 
 ## Testing Results
-[Describe your testing process and results. Include:]
-- Example successful inputs and results
-- How you used the maxscore-input file to test
+The script has been tested with various inputs, including:
+- Valid positive integers
+- Inputs with leading/trailing whitespace
+- input from `maxscore-input` file to ensure correct functionality in non-interactive mode.
+- Invalid inputs to verify error handling.
+
 
 ## Challenges and Solutions
-[Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, arrays, or Git workflow problems.]
 
 ## Resources
-[List any resources you used (class slides, ChatGPT, etc.). Please refer to the course syllabus for more details on citations.]
-
+- day 11 arrays lecture
 ## License
 This project is part of coursework for Chapman University and is intended for educational purposes.
