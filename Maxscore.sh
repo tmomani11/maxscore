@@ -3,6 +3,7 @@
 # CPSC 298-01
 
 printf "Enter 5 positive integers:\n" >&2
+declare -a scores
 for ((i=0; i<5; i++)); do
     printf "Score %d: " $((i+1)) >&2
     read -r score
